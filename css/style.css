@@ -7,3 +7,118 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* border: 1px solid; */
+}
+
+
+/* start header */
+
+/* start header__top */
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  text-align: center;
+}
+
+.header__top-menu {
+  display: flex;
+}
+
+.header__top-menu li {
+  margin-right: 50px;
+}
+
+.header__top-menu li:last-child {
+  margin-right: 0;
+}
+
+.header__top-menu a {
+  font-weight: 700;
+  color: #2F3035;
+}
+
+.header__logo {
+  width: 80px;
+  height: 76px;
+}
+
+.header__top-adress {
+  display: flex;
+  align-items: center;
+}
+.header__top-adress span {
+  font-weight: 700;
+  color: #2F3035;
+}
+
+.header__top-location {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.header__top-links a {
+  margin-right: 10px;
+}
+.header__top-links a:last-child {
+  margin-right: 0;
+}
+
+.icon-heart {
+width: 24px;
+height: 22px;
+}
+.icon-user {
+width: 24px;
+height: 24px;
+}
+.icon-cart {
+width: 30px;
+height: 24px;
+}
+
+/* end header__top */
+
+/* end header */
