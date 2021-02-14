@@ -238,26 +238,23 @@ a {
   object-fit: cover;
 }
 
-.section-slider__btn {
+.section-slider__btn,
+.product-slider__btn {
   background-color: transparent;
   border: none;
   outline: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
 }
 
 .section-slider__btnprev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   left: 20px;
-  z-index: 5;
 }
 
 .section-slider__btnnext {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   right: 20px;
-  z-index: 5;
 }
 
 .slick-dots {
@@ -291,7 +288,7 @@ ul.slick-dots {
   outline: none;
 }
 
-.slick-active button {
+li.slick-active button {
   background-color: #fff;
 }
 
@@ -457,11 +454,11 @@ ul.slick-dots {
   font-weight: 700;
 }
 
-.search__form-inner {
+.tabs__content {
   display: none;
 }
 
-.search__form-inner.tabs__content--active {
+.tabs__content.tabs__content--active {
   display: block;
 }
 
@@ -629,6 +626,11 @@ ul.slick-dots {
 
 /* start section products */
 
+.tabs__wrapper {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 .products-tabs__items {
   margin-bottom: 30px;
 }
@@ -654,6 +656,7 @@ ul.slick-dots {
   border-bottom: 3px solid #1C62CD;
 }
 
+
 .tabs-container__item-wrapper {
   width: 271px;
   height: 403px;
@@ -661,8 +664,13 @@ ul.slick-dots {
 }
 
 .product-slider {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
+
+.product-slider__item {
+  padding: 0px 7px;
+}
+
 
 .product-slider__item-link {
   width: 271px;
@@ -728,6 +736,7 @@ ul.slick-dots {
   height: 22px;
   top: 0;
   right: 0;
+  z-index: 9;
 }
 
 .button-favorite--active::before {
@@ -756,6 +765,7 @@ ul.slick-dots {
   height: 23px;
   top: 8px;
   right: 13px;
+  z-index: 10;
 }
 
 .tabs-container__img {
@@ -823,6 +833,10 @@ ul.slick-dots {
   border-bottom: 1px solid #1C62CD;
 }
 
+.tabs-container__item-wrapper.tab-container__not-aviable .product-slider__item-link--sale::before{
+  display: none;
+}
+
 .tabs-container__item-wrapper.tab-container__not-aviable .tabs-container__notify-link {
   display: block;
 }
@@ -832,6 +846,14 @@ ul.slick-dots {
 
 .tabs-container__item-wrapper.tab-container__not-aviable .tabs-container__notify-text {
   display: block;
+}
+
+.product-slider__btnprev {
+  left: -50px;
+}
+
+.product-slider__btnnext {
+  right: -50px;
 }
 
 .products-more {
