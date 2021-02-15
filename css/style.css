@@ -890,6 +890,7 @@ li.slick-active button {
 /* end banner  */
 
 
+
 /* start footer */
 
 .footer {
@@ -1033,5 +1034,51 @@ li.slick-active button {
   transition: opacity 0.3s ease;
 }
 
-
 /* end footer */
+
+
+
+
+/* start page catalog */
+
+/* start breadcrumbs */
+
+.header-catalog {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+  padding-right: 16px;
+  margin-right: 5px;
+  position: relative;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.breadcrumbs-item::after {
+  content: '';
+  position: absolute;
+  background-image: url('../icons/arrow-right.svg');
+  width: 6px;
+  height: 11px;
+  right: 0px;
+  bottom: 3px;
+}
+
+.breadcrumbs-link {
+  color: #C4C4C4;
+}
+
+.breadcrumbs-item:last-child::after {
+  display: none;
+}
+
+
+/* end breadcrumbs */
+
+/* end page catalog */
