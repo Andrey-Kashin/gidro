@@ -1176,6 +1176,32 @@ span.breadcrumbs-link {
   border: 1px solid;
 }
 
+.aside-filter {}
+
+.aside-filter__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-filter__tab {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #C4C4C4;
+  width: 50%;
+}
+
+.aside-filter__tab.tab--active {
+  font-weight: 700;
+  color: #2F3035;
+}
+
+.aside-filter__tab.tab--active span {
+  padding-bottom: 7px;
+  border-bottom: 2px solid #1C62CD;
+}
+
 /* end catalog-aside */
 
 /* start catalog-list */
@@ -1210,9 +1236,12 @@ span.breadcrumbs-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
 }
 
-.pagination-list__item--active {
+.pagination-list__item.active {
   width: 40px;
   height: 40px;
   border: 2px solid #1C62CD;
@@ -1221,12 +1250,12 @@ span.breadcrumbs-link {
   font-size: 18px;
 }
 
-.pagination-list__item--active .pagination-list__link {
+.pagination-list__item.active .pagination-list__link {
   color: #1C62CD;
 }
 
 .pagination-list__item+.pagination-list__item {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .pagination-list__link {
@@ -1234,6 +1263,8 @@ span.breadcrumbs-link {
 }
 
 /* end catalog-list */
+
+
 
 /* end section catalog */
 
