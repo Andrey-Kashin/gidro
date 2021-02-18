@@ -43,7 +43,7 @@ $(function () {
 	$(".js-range-slider").ionRangeSlider({
 		type: "double",
 		min: 100000,
-		max: 500000,
+		max: 2000000,
 		grid: false
 });
 
