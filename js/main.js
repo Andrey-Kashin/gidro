@@ -33,4 +33,18 @@ $(function () {
 		nextArrow: '<button class="product-slider__btn product-slider__btnnext"><img src = "../img/products/product-slider-arrow-next.svg" alt="next"></button>',
 	});
 
+	$('.filter-style').styler();
+
+	$('.filter__item-drop').on('click', function () {
+		$(this).toggleClass('filter__item-drop--active');
+		$(this).next().slideToggle(200);
+	});
+
+	$(".js-range-slider").ionRangeSlider({
+		type: "double",
+		min: 100000,
+		max: 500000,
+		grid: false
+});
+
 });
