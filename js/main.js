@@ -39,12 +39,28 @@ $(function () {
 		$(this).toggleClass('filter__item-drop--active');
 		$(this).next().slideToggle(200);
 	});
+	$('.filter__item-extra').on('click', function () {
+		$(this).toggleClass('filter__item-extra--active');
+		$(this).next().slideToggle(200);
+	});
 
 	$(".js-range-slider").ionRangeSlider({
 		type: "double",
 		min: 100000,
 		max: 2000000,
 		grid: false
-});
+	});
+
+	$('.catalog__filter-btngrid').on('click', function () {
+		$(this).addClass('catalog__filter-button--active');
+		$('.catalog__filter-btnline').removeClass('catalog__filter-button--active');
+		$('.tabs-container__item-wrapper').removeClass('tabs-container__item-wrapper--line');
+	});
+
+	$('.catalog__filter-btnline').on('click', function () {
+		$(this).addClass('catalog__filter-button--active');
+		$('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
+		$('.tabs-container__item-wrapper').addClass('tabs-container__item-wrapper--line');
+	});
 
 });
