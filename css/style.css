@@ -1608,7 +1608,7 @@ li.sel {
   background: #1C62CD;
 }
 
-.btn-checked .jq-checkbox.checked.checked ~ .btn-checked__text {
+.btn-checked .jq-checkbox.checked.checked~.btn-checked__text {
   color: #fff;
 }
 
@@ -1665,8 +1665,8 @@ li.sel {
 }
 
 .aside-filter__button--active {
-background-color: #1C62CD;
-color: #fff;
+  background-color: #1C62CD;
+  color: #fff;
 }
 
 /* start extra options box */
@@ -1700,7 +1700,7 @@ color: #fff;
   font-size: 14px;
 }
 
-.aside-filter__button-inner{
+.aside-filter__button-inner {
   text-align: center;
   margin-top: 7px;
 }
@@ -1781,12 +1781,202 @@ color: #fff;
   color: #C4C4C4;
 }
 
-
-
 /* end catalog-list */
-
-
 
 /* end section catalog */
 
 /* end page catalog */
+
+/* start product-page */
+
+/* start section product-page__card */
+
+.product-page__card {}
+
+.product-page__card-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-page__img-inner {
+  max-width: 500px;
+  width: 100%;
+  height: 579px;
+  padding-top: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+.product-page__img-inner.product-page__img-inner--sale::before {
+  content: 'SALE';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1C62CD;
+  padding: 13px 26px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.product-page__info {
+  max-width: 570px;
+  width: 100%;
+  height: 579px;
+}
+
+.product-page__img {
+  max-width: 100%;
+  width: 100%;
+  height: 579px;
+  margin-bottom: 17px;
+}
+
+.product-page__old-price {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 17px;
+  color: #2F3035;
+  opacity: 0.6;
+  background-image: url('../img/product-page/old-line-2.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.product-page__new-price {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #2F3035;
+  margin-bottom: 17px;
+}
+
+.product-page__link {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1C62CD;
+}
+
+.product-page__title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #2F3035;
+  margin-bottom: 10px;
+}
+
+.product-page__code {
+  font-weight: 400;
+  font-size: 15px;
+  color: #2F3035;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.product-page__links {
+  margin-bottom: 45px;
+}
+
+.product-page__favorite-link {
+  width: 24px;
+  height: 22px;
+  margin-right: 25px;
+}
+
+.product-page__compare {
+  width: 20px;
+  height: 27px;
+  margin-right: 25px;
+}
+
+.product-page__rating {}
+
+.product-page__tabs-items {}
+
+.product-page__tabs-item {
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(47 48 53 / 60%);
+  padding-right: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: 20px;
+}
+
+.product-page__tabs-item:last-child {
+  margin-right: 0;
+}
+
+.tab.product-page__tabs-item.tab--active {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F3035;
+  border-bottom: 2px solid #1C62CD;
+}
+
+.tabs__content-item {
+  max-width: 445px;
+  display: flex;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2F3035;
+  border-bottom: 1px solid rgb(47 48 53 / 10%);
+  margin-bottom: 17px;
+}
+
+.tabs__content-left {
+  width: 281px;
+  margin-right: 30px;
+}
+
+.tabs__content-right {
+  width: 134px;
+}
+
+.product-page__card-link {
+  border-bottom: 1px solid #1C62CD;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.tabs__content-more {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  padding-bottom: 3px;
+  color: #1C62CD;
+}
+
+.product-page__button {
+  background-color: #1C62CD;
+  border-radius: 3px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-page__card-button {
+  display: block;
+  padding: 16px 53px;
+}
+
+
+
+
+
+/* end section product-page__card */
+
+/* start product-page */
