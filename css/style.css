@@ -1791,7 +1791,7 @@ li.sel {
 
 /* start section product-page__card */
 
-.product-page__card {}
+
 
 .product-page__card-inner {
   display: flex;
@@ -1897,9 +1897,9 @@ li.sel {
   margin-right: 25px;
 }
 
-.product-page__rating {}
+/* .product-page__rating {}
 
-.product-page__tabs-items {}
+.product-page__tabs-items {} */
 
 .product-page__tabs-item {
   margin-right: 20px;
