@@ -63,4 +63,16 @@ $(function () {
 		$('.tabs-container__item-wrapper').addClass('tabs-container__item-wrapper--line');
 	});
 
+
+	$(function () {
+
+		$("#rateYo").rateYo({
+			starWidth: "20px",
+			spacing: "6px",
+			fullStar: true,
+			ratedFill: "#1C62CD"
+		});
+
+	});
+
 });
