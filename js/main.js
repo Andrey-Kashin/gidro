@@ -19,7 +19,7 @@ $(function () {
 	$('.tab').on('click', function (e) {
 		e.preventDefault();
 		$($(this).siblings()).removeClass('tab--active');
-		$($(this).parent().siblings().find('div')).removeClass('tabs__content--active');
+		$($(this).closest('.tabs__wrapper').siblings().find('div')).removeClass('tabs__content--active');
 		$(this).addClass('tab--active');
 		$($(this).attr('href')).addClass('tabs__content--active');
 
