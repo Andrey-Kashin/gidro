@@ -26,6 +26,12 @@
 		width: 870px;
 	}
 
+	.categories__inner {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
 }
 
 
@@ -138,5 +144,9 @@
 
 	.mobile-menu__top-items {
 		width: 500px;
+	}
+
+	.category__card {
+		padding: 10px;
 	}
 }
