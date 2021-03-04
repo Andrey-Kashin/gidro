@@ -1277,6 +1277,10 @@ span.breadcrumbs-link {
 
 /* end catalog__filter */
 
+.filter-btn {
+  display: none;
+}
+
 .catalog__inner {
   display: flex;
   justify-content: space-between;
@@ -1291,6 +1295,10 @@ span.breadcrumbs-link {
   margin-right: 15px;
 }
 
+.aside-filter__tabs-inner {
+  display: flex;
+  width: 100%;
+}
 
 .aside-filter__tabs {
   display: flex;

@@ -132,9 +132,8 @@ $(function () {
 
 // Это поворот стрелочки в меню подвала сайта на мобильных
 
-$('.footer__title').on('click', function() {
+$('.filter-btn').on('click', function() {
 	$(this).next().slideToggle();
-	$(this).toggleClass('footer__title--active');
 });
 
 });
