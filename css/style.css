@@ -1014,11 +1014,12 @@ li.slick-active button {
 }
 
 .footer-subs {
-  width: 260px;
+  width: 300px;
   height: auto;
+  margin-right: 15px;
 }
 
-.footer__title {
+.footer__title, .footer-subs__title {
   font-weight: 700;
   font-size: 14px;
   color: #2F3035;
@@ -1026,7 +1027,7 @@ li.slick-active button {
 }
 
 .footer-subs__title {
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
 
 .footer-subs__form {
@@ -1067,6 +1068,7 @@ li.slick-active button {
 .footer-menu {
   width: 150px;
   height: auto;
+  margin-right: 15px;
 }
 
 .footer-menu__link {
@@ -1077,7 +1079,7 @@ li.slick-active button {
 
 .footer-social {
   padding-top: 40px;
-  width: 260px;
+  width: auto;
   height: auto;
 }
 

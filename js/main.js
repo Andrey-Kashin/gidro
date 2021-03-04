@@ -15,6 +15,7 @@ $(function () {
 
 	});
 
+	// Код для табов
 
 	$('.tab').on('click', function (e) {
 		e.preventDefault();
@@ -40,9 +41,41 @@ $(function () {
 		slidesToScroll: 1,
 		prevArrow: '<button class="product-slider__btn product-slider__btnprev"><img src = "../img/products/product-slider-arrow-prew.svg"></button>',
 		nextArrow: '<button class="product-slider__btn product-slider__btnnext"><img src = "../img/products/product-slider-arrow-next.svg" alt="next"></button>',
+		responsive: [
+			{
+				breakpoint: 1301,
+				settings: {
+					arrows: false,
+					slidesToShow: 3,
+					dots: true,
+					slidesToScroll: 1,
+
+				}
+			},
+			{
+				breakpoint: 881,
+				settings: {
+					arrows: false,
+					slidesToShow: 2,
+					dots: true,
+					slidesToScroll: 1,
+
+				}
+			},
+			{
+				breakpoint: 588,
+				settings: {
+					arrows: false,
+					slidesToShow: 1,
+					dots: true,
+					slidesToScroll: 1,
+				}
+			}
+		]
 	});
 
 	$('.filter-style').styler();
+
 
 	$('.filter__item-drop').on('click', function () {
 		$(this).toggleClass('filter__item-drop--active');
@@ -53,12 +86,17 @@ $(function () {
 		$(this).next().slideToggle(200);
 	});
 
+
+	// Ползунок со шкалой
+
 	$(".js-range-slider").ionRangeSlider({
 		type: "double",
 		min: 100000,
 		max: 2000000,
 		grid: false
 	});
+
+	// Настройка фильтра на странице catalog
 
 	$('.catalog__filter-btngrid').on('click', function () {
 		$(this).addClass('catalog__filter-button--active');
@@ -73,6 +111,8 @@ $(function () {
 	});
 
 
+	// Звёздный рейтинг
+
 	$(function () {
 
 		$("#rateYo").rateYo({
@@ -84,8 +124,17 @@ $(function () {
 
 	});
 
-	$('.mobile-menu__btn').click(function() {
+	// Вызов мобильного меню
+
+	$('.mobile-menu__btn').on('click', function() {
     $('.mobile-menu').toggleClass('mobile-menu-active');
+});
+
+// Это поворот стрелочки в меню подвала сайта на мобильных
+
+$('.footer__title').on('click', function() {
+	$(this).next().slideToggle();
+	$(this).toggleClass('footer__title--active');
 });
 
 });
