@@ -2,8 +2,8 @@ $(function () {
 	$(".slider__inner").slick({
 		dots: true,
 		speed: 800,
-		prevArrow: '<button class="section-slider__btn section-slider__btnprev"><img src = "../img/slider-1/prew-arrow.svg" alt="previous"></button>',
-		nextArrow: '<button class="section-slider__btn section-slider__btnnext"><img src = "../img/slider-1/next-arrow.svg" alt="next"></button>',
+		prevArrow: '<button class="section-slider__btn section-slider__btnprev"><img src = "img/slider-1/prew-arrow.svg" alt="previous"></button>',
+		nextArrow: '<button class="section-slider__btn section-slider__btnnext"><img src = "img/slider-1/next-arrow.svg" alt="next"></button>',
 		responsive: [
 			{
 				breakpoint: 770,
@@ -35,8 +35,8 @@ $(function () {
 	$(".product-slider").slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		prevArrow: '<button class="product-slider__btn product-slider__btnprev"><img src = "../img/products/product-slider-arrow-prew.svg"></button>',
-		nextArrow: '<button class="product-slider__btn product-slider__btnnext"><img src = "../img/products/product-slider-arrow-next.svg" alt="next"></button>',
+		prevArrow: '<button class="product-slider__btn product-slider__btnprev"><img src = "img/products/product-slider-arrow-prew.svg"></button>',
+		nextArrow: '<button class="product-slider__btn product-slider__btnnext"><img src = "img/products/product-slider-arrow-next.svg" alt="next"></button>',
 		responsive: [
 			{
 				breakpoint: 1301,
