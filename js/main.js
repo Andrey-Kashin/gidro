@@ -12,11 +12,9 @@ $(function () {
 				}
 			}
 		]
-
 	});
 
 	// Код для табов
-
 	$('.tab').on('click', function (e) {
 		e.preventDefault();
 		$($(this).siblings()).removeClass('tab--active');
@@ -25,12 +23,10 @@ $(function () {
 		$($(this).attr('href')).addClass('tabs__content--active');
 
 		// Принудительная инициализация слайдера
-
 		$('.product-slider').slick('setPosition');
 	});
 
 	// Замена цвета на кнопке при клике мышью
-
 	$('.tabs-container__button-favorite').on('click', function () {
 		$($(this)).toggleClass('button-favorite--active');
 	});
@@ -88,7 +84,6 @@ $(function () {
 
 
 	// Ползунок со шкалой
-
 	$(".js-range-slider").ionRangeSlider({
 		type: "double",
 		min: 100000,
@@ -97,7 +92,6 @@ $(function () {
 	});
 
 	// Настройка фильтра на странице catalog
-
 	$('.catalog__filter-btngrid').on('click', function () {
 		$(this).addClass('catalog__filter-button--active');
 		$('.catalog__filter-btnline').removeClass('catalog__filter-button--active');
@@ -112,7 +106,6 @@ $(function () {
 
 
 	// Звёздный рейтинг
-
 	$(function () {
 
 		$("#rateYo").rateYo({
@@ -121,16 +114,18 @@ $(function () {
 			fullStar: true,
 			ratedFill: "#1C62CD"
 		});
-
 	});
 
 	// Вызов мобильного меню
-
 	$('.mobile-menu__btn').on('click', function() {
     $('.mobile-menu').toggleClass('mobile-menu-active');
 });
 
 // Это поворот стрелочки в меню подвала сайта на мобильных
+$('.footer__title').on('click', function() {
+	$(this).next().slideToggle();
+	$(this).toggleClass('footer__title--active');
+});
 
 $('.filter-btn').on('click', function() {
 	$(this).next().slideToggle();
