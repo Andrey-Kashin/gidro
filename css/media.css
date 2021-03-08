@@ -311,6 +311,10 @@
 		padding-bottom: 15px;
 	}
 
+	.products-tabs__items {
+		overflow-x: scroll;
+	}
+
 	.catalog__filter-button {
 		display: none;
 	}
@@ -527,6 +531,4 @@
 	.footer__title--active {
 		pointer-events: auto;
 	}
-
-
 }
